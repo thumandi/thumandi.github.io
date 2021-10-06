@@ -1,5 +1,8 @@
 *{
-    font-family: 'Roboto', sans-serif;}
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+    
 
 /* Fonts */
 
@@ -99,11 +102,19 @@ body {
     background-size: cover;
 }
 
-main{
+.index_main{
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-left: 10%
+}
+
+.about_main{
+    /* fortsätt här */
+}
+
+a{
+    color: black;
 }
 
 h1 {
@@ -155,6 +166,14 @@ button:hover {
 
 .button_2{
 background: #E7C4AC;
+}
+
+.button_3 {
+    background: #D99F84;
+}
+
+.button_4{
+background: #ECCC8E;
 }
 
 
