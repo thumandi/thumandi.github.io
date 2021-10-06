@@ -67,6 +67,21 @@ a.active {
     background-image: url("images/backgrounds/index_background.html.png" );
 }
 
+.projects_body{
+    background-image: url("images/backgrounds/projects_background.png" );
+}
+
+.about_body {
+    background-image: url("images/backgrounds/about_background.png" );
+}
+
+.resume_body {
+    background-image: url("images/backgrounds/resume_background.png" );
+}
+
+.contact_body {
+    background-image: url("images/backgrounds/contact_background.png" );
+}
 
 
 /* Body */
