@@ -13,33 +13,191 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="index_body">
+<body id="paralax_body">
     <header>
         <a class="page_title" href="index.html"><b>thumandi</b>delange</a>
+    
         <nav class="navbar">
-            <a class="nav_projects" href="paralax.html">Paralax</a>
-            <a class="nav_projects" href="projects.html">Selected projects</a>
-            <a class="nav_about" href="about.html">About</a>
-            <a class="nav_resume" href="resume.html">Resumé</a>
-            <a class="nav_contact" href="contact.html">Contact</a>
+            <a class="nav_projects" href="#section_projects">Selected projects</a>
+            <a class="nav_about" href="#section_about">About</a>
+            <a class="nav_resume" href="#section_resume">Resumé</a>
+            <a class="nav_contact" href="#section_contact">Contact</a>
         </nav>
     </header>
+    
+    <section id="section_index">
 
-    <main class="index_main">
-        <h1>Hi, I'm Thumandi</h1>
-        <h2>a UX designer from Stockholm</h2>
-        <h3 class="index_h3">I’m passionate about real life people
-            and ethical design.<br>Welcome to my portfolio.
-            <br><br>
-            I’m building this website myself, and it’s 
-            still under construction. Feel free to look 
-            around, and don’t hesitate to reach out if 
-            you have any questions, comments or suggestions 
-            on how I could build this even better.</h3>
+            <h1>Hi, I'm Thumandi</h1>
+            <h2>a UX designer from Stockholm</h2>
+            <h3 class="index_h3">I’m passionate about real life people
+                and ethical design.<br>Welcome to my portfolio.
+                <br><br>
+                I’m building this website myself, and it’s 
+                still under construction. Feel free to look 
+                around, and don’t hesitate to reach out if 
+                you have any questions, comments or suggestions 
+                on how I could build this even better.</h3>
+    
+            <button class="button_projects" onclick="window.location.href='#section_projects'">Projects</button>
+            <button class="button_resume" onclick="window.location.href='#section_resume'">Resumé</button>
+    
+    </section>
+    <section id="section_projects">
 
-        <button class="button_1" onclick="window.location.href='projects.html'">Projects</button>
-        <button class="button_2" onclick="window.location.href='resume.html'">Resumé</button>
-    </main>
+        <div id="section_projects_textcontainer">
+        <h2>What I do?</h2>
+        <h3>Here are some projects that I'm proud of</h3>
+        </div>
+
+        <div id="section_projects_imagecontainer">
+            <div>
+                <img src="style/images/projects/image_placeholder_rectangle.png" alt="PriceRunner project image">
+                <h3>PriceRunner</h3>
+            </div>
+    
+            <div>
+                <img src="style/images/projects/image_placeholder_rectangle.png" alt="Byke project image">
+                <h3>Byke</h3>
+            </div>
+    
+    
+            <div>
+                <img src="style/images/projects/image_placeholder_rectangle.png" alt="FRISQ project image">
+                <h3>FRISQ</h3>
+            </div>
+    
+    
+            <div>
+                <img src="style/images/projects/image_placeholder_rectangle.png" alt="Portfolio project image">
+                <h3>Portfolio</h3>
+            </div>
+        </div>
+    
+    </section>
+    <section id="section_about">
+        <h1>This is about</h1>
+    
+        <h2>Who am I?</h2>
+
+        <div>
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td>Thumandi</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>Profession:</td>
+                    <td>UX designer</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td>Stockholm, Sweden</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>I am a compassionate, multifaceted and social
+            Stockholm-based individual, who is always game
+            to try new things and connect with new people!
+            I have been active in events, fashion and in the
+            music industry, but have recently transferred to
+            studying UX-design. I have also been self employed
+            under a personal social media brand, and worked
+            actively with collaborations and content marketing.
+            If you want to know more about me, or get in touch, I
+            suggest yo uhead over to my linkedin page. 
+            Feel free to reach out at any time.
+        </h3>
+        <button class="button_linkedin" ><a href="https://www.linkedin.com/in/thumandi-de-lange">LinkedIn</a></button>
+        <button class="button_contact"><a class="nav_contact" href="#section_contact">Contact</a></button>
+    </section>
+
+    <section id="section_resume">
+        <div>
+            <h2>Where have I studied?</h2>
+            <table>
+                <tr>
+                    <td>2020 - 2022</td>
+                    <td> <a href="https://nackademin.se"><strong>Nackademin</strong></a></td>
+                    <td>UX design</td>
+                </tr>
+                <tr>
+                    <td>2018 - 2020</td>
+                    <td><a href="http://dmgeducation.se"><strong>DMG</strong></a></td>
+                    <td>Music Business</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td><a href="https://www.sh.se/english/sodertorn-university"><strong>Södertörn University</strong></a></td>
+                    <td>Media Technology</td>
+                </tr>
+                <tr>
+                    <td>2010 - 2013</td>
+                    <td><a href="http://engelskagymnasiet.se"><strong>Engelska Gymnasiet</strong></a></td>
+                    <td>Art & Design</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>What other experience do I have?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat. Duis aute irure dolor in 
+                reprehenderit in voluptate velit esse cillum dolore 
+                eu fugiat nulla pariatur. Excepteur sint occaecat 
+                cupidatat non proident, sunt in culpa qui officia 
+                deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div>
+            <h2>Any languages?</h2>
+            <table>
+                <tr>
+                    <td>Swedish:</td>
+                    <td>Native</td>
+                </tr>
+                <tr>
+                    <td>English:</td>
+                    <td>Fluent</td>
+                </tr>
+                <tr>
+                    <td>Spanish:</td>
+                    <td>Beginner</td>
+                </tr>
+            </table>
+        </div>
+
+        <div>
+            <h2>Other qualifications</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea 
+                commodo consequat.</p>
+        </div>
+
+    </section>
+    <section id="section_contact">
+        <h1>This is contact</h1>
+
+        <div>
+            <h2>Contact me here...</h2>
+            <p>(kontaktformulär)</p>
+        </div>
+
+        <div id="linkedin_container">
+            <h2>... or here</h2>
+            <a id="linkedin_image" href="https://www.linkedin.com/in/thumandi-de-lange"><div id="linkedin_image"></div></a>
+            <button class="button_linkedin" ><a href="https://www.linkedin.com/in/thumandi-de-lange">LinkedIn</a></button>
+        </div>
+    </section>
 
     <footer>
         <p>Copyright Thumandi de Lange 2021</p>
