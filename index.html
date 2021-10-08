@@ -7,21 +7,27 @@
     <meta name="viewport" content="wodth=device-width, initial-scale=1.0">
     <title>Thumandi de Lange</title>
     <link rel="stylesheet" href="style/main.css">
+    <script src="script.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body id="paralax_body">
-    <header>
+<body>
+    <header class="menu" id="menu">
         <a class="page_title" href="index.html"><b>thumandi</b>delange</a>
     
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a class="nav_projects" href="#section_projects">Selected projects</a>
             <a class="nav_about" href="#section_about">About</a>
             <a class="nav_resume" href="#section_resume">Resumé</a>
             <a class="nav_contact" href="#section_contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
         </nav>
     </header>
     
@@ -117,7 +123,8 @@
     </section>
 
     <section id="section_resume">
-        <div>
+        <div class="resume_div_top">
+        <div class="resume_div_content">
             <h2>Where have I studied?</h2>
             <table>
                 <tr>
@@ -143,7 +150,7 @@
             </table>
         </div>
 
-        <div>
+        <div class="resume_div_content">
             <h2>What other experience do I have?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore 
@@ -155,8 +162,10 @@
                 cupidatat non proident, sunt in culpa qui officia 
                 deserunt mollit anim id est laborum.</p>
         </div>
+    </div>
 
-        <div>
+    <div class="resume_div_bottom">
+        <div class="resume_div_content">
             <h2>Any languages?</h2>
             <table>
                 <tr>
@@ -174,7 +183,7 @@
             </table>
         </div>
 
-        <div>
+        <div class="resume_div_content">
             <h2>Other qualifications</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore 
@@ -182,13 +191,14 @@
                 exercitation ullamco laboris nisi ut aliquip ex ea 
                 commodo consequat.</p>
         </div>
+    </div>
 
     </section>
     <section id="section_contact">
 
         <div id="contact_form">
             <h2>Contact me here...</h2>
-            <p>Contact form coming soon!</p>
+            <p>[Contact form coming soon]</p>
         </div>
 
         <div id="linkedin_container">
