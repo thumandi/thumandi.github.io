@@ -48,9 +48,9 @@ nav a:hover {
     background-color: rgba(233, 232, 228, 0.5);
 }
 
-a.active {
-    font-family: fontsMontserratBold;
-}
+.menu .icon {
+    display: none;
+  }
 
 .page_title {
     float: left;
@@ -88,8 +88,13 @@ section {
 }
 
 #section_index div{
-    margin-left: 15%;
-    margin-right: 50%;
+    /*margin-left: 15%;
+    margin-right: 50%;*/
+    margin: 4% 50% 0% 15%;
+}
+
+#section_index h3{
+    margin: 8% 0%;
 }
 
 #section_projects{
@@ -123,7 +128,7 @@ div img {
     padding-top: 5%;
 }
 #section_about div {
-    padding: 5% 10% 2% 40%;
+    padding: 5% 10% 2% 45%;
 }
 
 #section_about table{
@@ -131,12 +136,12 @@ div img {
 }
 
 #section_about h3{
-    margin: 10% 0% 10% 0%;
+    margin: 8% 0%;
 }
 
 #section_resume {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #D8D7D2;
@@ -145,8 +150,14 @@ div img {
     padding: 10% 0% 10% 0%;
 }
 
-#section_resume div {
-    width: 300px;
+.resume_div_top, .resume_div_bottom {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.resume_div_content {
+    width: 40vw;
 }
 
 td {
@@ -167,19 +178,26 @@ td {
 #contact_form {
     height: 344px;
     width: 344px;
-    margin: 10% 0% 0% 10%;
+    margin: 10% auto 0% auto;
 }
 
 #contact_form p {
-    background-color: #CBC9C3;
+    color: #84634E;
+    background-color: #ECCC8E;
     width: 344px;
-    height: 150px;
+    height: 200px;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 144px;
+}
+
+#contact_form p:hover{
+    color: #000;
+    background-color: #E7CC9A;
 }
 
 #linkedin_container {
-    margin: 10% 0% 0% 10%;
+    margin: 10% auto 0% auto;
+    
 }
 
 #linkedin_image {
@@ -208,7 +226,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-h2{
+h2 {
     font-family: 'Merriweather', serif;
     font-size: 3vw;
     color: #000;
@@ -218,11 +236,12 @@ h2{
 
 #section_index h2 {
     color: #84634E;
+    font-size: 2vw;
 }
 
 h3, td , p{
     font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 /* Buttons */
@@ -239,7 +258,7 @@ button {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    margin-top: 2%;
+    margin-top: 0%;
     transition-duration: 0.1s;
     }
     
@@ -271,10 +290,127 @@ footer {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    margin-bottom: 0px;
+    padding: 10px 0px;
 
     font-weight: 300;
     font-size: 10px;
     color: #84634E;
 }
+  
+  /* On screens that are 992px or less */
+  @media screen and (max-width: 992px) {
 
+    #section_index{
+        background-image: url("images/backgrounds/mobile_index.png" );
+    }
+    
+    #section_index div{
+        margin: 14% 30% 0% 15%;
+    }
+
+    #section_index h1{
+        font-size: 4vh;
+    }
+    
+    #section_index h2{
+        font-size: 3vh;
+    }
+
+    #section_index h3{
+        margin: 8% 0%;
+    }
+    
+    #section_projects{
+        background-image: url("images/backgrounds/mobile_projects.png" );
+    }
+
+    #section_about {
+        background-image: url("images/backgrounds/mobile_about.png" );
+    }
+    #section_about div {
+        padding: 10% 10% 10% 20%;
+    }
+
+    .resume_div_top, .resume_div_bottom {
+        /*flex-direction: column;
+        justify-content: space-evenly;*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    .resume_div_content {
+        /*width: 80vw;
+        margin: 5% 10%;*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        min-width: 300px;
+        margin: 5% 0%;
+    }
+
+    .resume_div_top td {
+        padding: 5px 2px 0px 0px;
+        font-size: 12px;
+    }
+
+    .resume_div_bottom td {
+        width: 20px;
+        font-size: 13px;
+        margin: 0px;
+        padding: 0px;
+        min-width: none;
+    }
+
+    #linkedin_container {
+        margin: 20% auto 20% auto;
+        
+    }
+
+    /* Text styling */
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    /* Buttons */
+
+    .button_resume {
+        margin-top: 10px;
+    }
+
+    /* Footer */
+
+    footer {
+        font-size: 8px;
+    }
+
+  }
+
+    /* On screens that are 600px or less*/
+    @media screen and (max-width: 600px) {
+
+        .menu a {
+            display: none;
+        }
+        .menu a.icon {
+            float: right;
+            display: block;
+        }
+    
+        .menu.responsive {
+            position: relative;
+        }
+        .menu.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .menu.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
